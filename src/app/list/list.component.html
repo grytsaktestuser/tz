@@ -1,0 +1,19 @@
+<div class="list-container">
+  <div class="list">
+      <div class="list__head">
+          <div class="list__add-block">
+              <input type="text" class="list__add-input">
+              <span class="list__btn list__btn_primary list__btn_add" (click)="addListItem()">Add</span>
+          </div>
+          <div class="list__control-block">
+              <span class="list__btn list__btn_primary  list__btn_sort-number" (click)="sortByNumber()">Sort by number</span>
+              <span class="list__btn list__btn_primary list__btn_sort-name" (click)="sortByName()">Sort by name</span>
+              <span class="list__btn list__btn_danger list__btn_reset" (click)="resetList()">Reset</span>
+          </div>
+      </div>
+      <div class="list__body">
+          <ul class="list__ul"></ul>
+          <br>
+      </div>
+  </div>
+</div>
